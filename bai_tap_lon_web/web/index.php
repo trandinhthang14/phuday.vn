@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +10,7 @@
       rel="stylesheet"
       href="font/fontawesome-free-6.2.0-web/css/all.min.css"
     />
-    <link rel="stylesheet" href="c.css" />
+    <link rel="stylesheet" href="css/c.css" />
   </head>
 
   <body class="home">
@@ -18,12 +19,12 @@
         <div class="header__navbar-list-item">
           <a href="./index.php" class="header__navbar-list-item-icon-fist">
             <i class="fa-solid fa-house-chimney"></i>
-            <img src="./anh/home.png" alt="" />
+            <img src="./image/home.png" alt="" />
             Trang Chủ
           </a>
 
           <a href="" class="header__navbar-list-item-icon-fist">
-            <img src="./anh/gb.png" alt="" />
+            <img src="./image/gb.png" alt="" />
             English
           </a>
 
@@ -32,7 +33,7 @@
             class="header__navbar-list-item-icon-fist"
           >
             <i class="fa-brands fa-facebook"></i>
-            <img src="./anh/facebook.png" alt="" />
+            <img src="./image/facebook.png" alt="" />
           </a>
 
           <a
@@ -40,7 +41,7 @@
             class="header__navbar-list-item-icon-fist"
           >
             <i class="fa-brands fa-youtube"></i>
-            <img src="./anh/youtube2.png" alt="" />
+            <img src="./image/youtube2.png" alt="" />
           </a>
 
           <div class="header__navbar-list-item-icon--seacher">
@@ -51,7 +52,7 @@
 
         <div class="header__navbar-fist">
           <a href="./index.php" class="header__navbar-list-img">
-            <img src="./anh/logo.jpg" alt="Phủ Dầy Vụ Bản Nam Định " />
+            <img src="./image/logo.jpg" alt="Phủ Dầy Vụ Bản Nam Định " />
           </a>
         </div>
 
@@ -62,7 +63,7 @@
           <a href="kinhnghiem.php">
           <li class="header__navbar-item--hot">Kinh nghiệm đi Phủ Dầy</li>
         </a>
-          <li class="header__navbar-item--hot">Đăng nhập</li>
+          
         </ul>
       </div>
 
@@ -519,15 +520,6 @@
                         ></em
                       >
                     </p>
-                    <a
-                      href="#"
-                      target="_self"
-                      class="button primary lowercase"
-                      style="border-radius: 99px"
-                    >
-                      <i class="icon-heart"></i>
-                      <span>Liên hệ tư vấn miễn phí!</span>
-                    </a>
                   </div>
                 </div>
                 <style>

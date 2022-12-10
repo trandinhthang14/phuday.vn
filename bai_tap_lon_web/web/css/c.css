@@ -32,7 +32,7 @@
   
   .home{
        
-    background-image: url(./anh/mau-kem.png) ;
+    background-image: url(../image/mau-kem.png) ;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -105,7 +105,7 @@
         }
   
         .fa-magnifying-glass{
-            content: url(./anh/search.png);
+            content: url(../image/search.png);
             width: 34px;
             height: 27px;
             position: absolute;
