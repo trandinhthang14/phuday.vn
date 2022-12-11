@@ -12,16 +12,32 @@
 </head>
 
 <body>
-    <?php
-            if (isset($_GET["view"])) {
-                $view = $_GET["view"];
-                include("". $view . ".php");
-            } else {
-                include("login.php");
-            }
-    ?>
 
-    
+    <?php
+
+        if (!isset($_SESSION)) {
+            session_start();
+        }
+
+        if (isset($_SESSION['admin'])) {
+            $user_admin = (isset($_SESSION['admin'])) ? $_SESSION['admin'] : [];
+        }
+
+//         else {
+            
+//             echo "<script>
+//             window.location.href = ‘http://localhost/phuday.vn/bai_tap_lon_web/admin/?view=login’;
+// </script>";
+            
+//         }
+
+        if (isset($_GET["view"])) {
+            $view = $_GET["view"];
+            include("". $view . ".php");
+        } else {
+            include("login.php");
+        }
+    ?>
 </body>
 
 </html>

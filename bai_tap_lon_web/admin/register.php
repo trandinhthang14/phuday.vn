@@ -1,11 +1,6 @@
 <?php
-$server_username = "root";
-$server_password = "Tuan@2710201";
-$server_host = "localhost";
-$database = 'phuday';
+require_once('../Model/DBconnect.php');
 
-$conn = mysqli_connect($server_host, $server_username, $server_password, $database) or die("không thể kết nối tới database");
-mysqli_query($conn, "SET NAMES 'UTF8'");
 $error = [];
 
 if (isset($_POST['name'])) {
@@ -39,14 +34,13 @@ VALUES ('$name', '$email','$password','$datetime')";
         $checkEmail = "SELECT * FROM admins WHERE email = '$email'";
         $queryEmail = mysqli_query($conn, $checkEmail);
         $checkEmail = mysqli_num_rows($queryEmail);
-    
+
         if ($checkEmail == 1) {
             echo " <script>
-            aleart('Địa chỉ email đã tồn tại.');
+            alert('Địa chỉ email đã tồn tại.');
                </script>";
         } else {
             $query = mysqli_query($conn, $sql);
-        
         }
     }
 
@@ -57,7 +51,6 @@ VALUES ('$name', '$email','$password','$datetime')";
     }
 }
 ?>
-
 <div class="background">
     <div class="shape"></div>
     <div class="shape"></div>
